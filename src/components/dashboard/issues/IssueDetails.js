@@ -9,6 +9,8 @@ const issue = issues.filter(issue => issue.id == match.params.issueID)
 
       <div>
       <h1>{issue[0].message}</h1>
+
+
       </div>
     )
   }

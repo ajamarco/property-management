@@ -1,42 +1,12 @@
 import React, {useState} from 'react'
-import { makeStyles } from '@material-ui/core/styles';
+import useStyles from './formStyle/styleAddTenant'
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Icon from '@material-ui/core/Icon';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
 
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      '& > *': {
-        margin: theme.spacing(3),
-        width: '90%', 
-      },
-    },
-    root2: {
-        flexGrow: 1,
-    },
-    rooms: {
-      '& > *': {
-        width: '100%', 
-      },
-    },
-    dobStyle: {
-        '& > *': {
-          width: '50%', 
-        },
-      },
-    paper: {
-        padding: theme.spacing(4),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
-      },
-    textField: {
-        marginLeft: theme.spacing(1),
-        marginRight: theme.spacing(1),
-        width: '100%',
-      },
-  }));
+
 
 export default function AddTenant(props) {
     const [value, setValue] = useState({

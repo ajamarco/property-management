@@ -1,23 +1,10 @@
 import React, {useState} from 'react'
-import { makeStyles } from '@material-ui/core/styles';
+import useStyles from './formStyle/styleAddProperty'
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Icon from '@material-ui/core/Icon';
 
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      '& > *': {
-        margin: theme.spacing(3),
-        width: '90%', 
-      },
-    },
-    rooms: {
-      '& > *': {
-        width: '50%', 
-      },
-    }
-  }));
 
 export default function AddProperty(props) {
     const [value, setValue] = useState({

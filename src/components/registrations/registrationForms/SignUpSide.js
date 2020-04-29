@@ -18,18 +18,7 @@ import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -165,11 +154,6 @@ export default function SignUpSide({setValueAccess, password_confirmation, first
               Sign Up
             </Button>
             <Grid container>
-              <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
-                </Link>
-              </Grid>
               <Grid item>
                 <Link to='/login' variant="body2">
                   {"Don't have an account? Sign Up"}
@@ -177,7 +161,7 @@ export default function SignUpSide({setValueAccess, password_confirmation, first
               </Grid>
             </Grid>
             <Box mt={5}>
-              <Copyright />
+         
             </Box>
           </form>
         </div>
